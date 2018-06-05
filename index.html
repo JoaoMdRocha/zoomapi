@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Zoom JSSDK 1.2.4</title>
+    <meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MyMeetingApp</a>
+            </div>
+            <div id="navbar">
+                <form class="navbar-form navbar-right" id="meeting_form">
+                    <div class="form-group">
+                        <input type="text" name="display_name" id="user_email" value="" placeholder="email address">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="requestPMI">Request</button>
+                    <div class="form-group">
+                        <input type="text" name="meeting_number" id="meeting_number" value="" placeholder="Meeting Number" >
+                    </div>
+
+                </form>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="main">
+        <div id='root'></div>
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.i18n.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
