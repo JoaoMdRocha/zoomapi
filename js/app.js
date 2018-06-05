@@ -10,6 +10,37 @@
     var API_SECRET = 'yXKuU56RnW8Du1VzJ7fY3UwulW35shTPk2V6';
 
 
+    document.getElementById('requestPMI').addEventListener('click', function(e){
+
+
+        var userId = document.getElementById('user_email').value;
+var token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJVYlNvSXJOWVRHU3FJUG5pVzdXWU9BIiwiZXhwIjoxNDk2MDE5NjQwMDB9.2SjunNWo9ITW-4R_NnFkpGFXjPIAC7yLiJO_LoWArcM';
+
+        $.ajax({
+   type: "GET",
+   dataType: "jsonp",
+ //   data: {
+ //   'api-key': API_KEY
+ // },
+ // headers: {
+ //    'Authorization': 'Bearer ' + token
+ //  },
+   url: "https://api.zoom.us/v2/users/" + userId + "?access_token=" + token,
+  //  success: function(data){
+  //    alert(data);
+  //  }
+  // jsonpCallback: 'callback',
+  //   success: function (data) {
+  //       console.log(data);
+  //   }
+
+});
+
+
+
+
+
+    });
 
 
 })();
